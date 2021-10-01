@@ -1,0 +1,8 @@
+clc;
+d=input("enter the distance between phase and newtral wire");
+r=input("enter the radius of phase and newtral wire");
+rad=r*0.77885;
+L=2*10^(-7)*log(d/rad);
+fprintf("inductance in wire= %d \n",L);
+c=(8.88*10^(-12))/log(d/r);
+fprintf("capacitance of wire= %d ",c)
